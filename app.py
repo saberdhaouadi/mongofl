@@ -4,11 +4,12 @@ from pymongo import MongoClient
 import os
 
 
+
 app = Flask(__name__)
 title = "TODO application"
 heading = "TODO My Daily tasks"
 
-client = MongoClient("mongodb://127.0.0.1:27017")
+client = MongoClient("mongodb+srv://saber123:saber123@cluster0.auc0l.mongodb.net/mymongodbtodo?retryWrites=true&w=majority")
 db = client.mymongodbtodo
 todos = db.todo
 
